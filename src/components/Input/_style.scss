@@ -1,0 +1,94 @@
+.input-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  .icon-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $input-color;
+  }
+
+  .input-inner {
+    width: 100%;
+    padding: $input-padding-y $input-padding-x;
+    font-size: $input-font-size;
+    font-family: $input-font-family;
+    font-weight: $input-font-weight;
+    line-height: $input-line-height;
+    color: $input-color;
+    background: $input-bg;
+    padding-right: 34px;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
+    box-shadow: $input-box-shadow;
+    transition: $input-transition;
+
+    &:focus {
+      box-shadow: $input-focus-box-shadow;
+      outline: none;
+      background: $input-focus-bg;
+      border-color: $input-focus-border-color;
+      color: $input-focus-color;
+    }
+
+    &::placeholder {
+      color: $input-placeholder-color;
+      opacity: 1;
+    }
+
+    &:disabled,
+    &:read-only {
+      background-color: $input-disabled-bg;
+      border-color: $input-disabled-border-color;
+      opacity: 1;
+    }
+  }
+
+  .input-group-pre,
+  .input-group-suf {
+    display: flex;
+    align-items: center;
+    padding: $input-padding-y, $input-padding-x;
+    font-size: $input-font-size;
+    font-weight: $font-weight-normal;
+    line-height: $input-line-height;
+    color: $input-group-addon-color;
+    // text-align: center;
+    white-space: nowrap;
+    background-color: $input-group-addon-bg;
+    border: $input-border-width solid $input-group-addon-border-color;
+    border-radius: $input-border-radius;
+  }
+
+  &.input-group.input-group-has-pre>.input-group-pre,
+  &.input-group.input-group-has-suf>.input-inner {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+
+  &.input-group.input-group-has-suf>.input-group-suf,
+  &.input-group.input-group-has-pre>.input-inner {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .input-size-sm {
+    font-size: $input-font-size-sm;
+    padding: $input-padding-y-sm $input-padding-x-sm;
+    border-radius: $input-border-radius-sm;
+  }
+
+  .input-size-lg {
+    font-size: $input-font-size-lg;
+    padding: $input-padding-y-lg $input-padding-x-lg;
+    border-radius: $input-border-radius-lg;
+  }
+}

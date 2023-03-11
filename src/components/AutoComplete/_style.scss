@@ -1,0 +1,43 @@
+.auto-complete {
+  position: relative;
+
+  .suggestions-list {
+    position: absolute;
+    border: $menu-border-width solid $menu-border-color;
+    list-style: none;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 100;
+    background: $white;
+    padding-left: 0;
+    box-shadow: $submenu-box-shadow;
+    width: 100%;
+
+    .suggestions-loading-icon {
+      display: flex;
+      min-height: 75px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .suggestions-item {
+      padding: $menu-item-padding-y $menu-item-padding-x;
+      cursor: pointer;
+      transition: $menu-transition;
+      color: $body-color;
+
+      &.item-highlight {
+        background: $menu-item-active-color !important;
+        color: $white !important;
+      }
+
+      &:hover {
+        color: $menu-item-active-color !important;
+      }
+
+      &.item-highlight:hover {
+        color: $white !important;
+      }
+    }
+  }
+}
