@@ -28,7 +28,7 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>;
  * 页面中常用的按钮组件，适合完成特定的交互，支持 HTML button 和 a 链接的所有方法和属性
  * ### 引用方法
  * ```js
- * import { Button } from 'component-library';
+ * import { Button } from 'wanyueship';
  * ```
  */
 const Button: React.FC<ButtonProps> = (props) => {

@@ -21,6 +21,13 @@ export type IFormContext =
 export const FormContext = createContext<IFormContext>({} as IFormContext);
 export type IFormRef = Omit<ReturnType<typeof useStore>, 'fields' | 'dispatch' | 'form'>;
 
+/**
+ * 页面中常用的Form表单，支持自定义
+ * ### 引用方法
+ * ```js
+ * import { Form } from 'wanyueship';
+ * ```
+ */
 const Form = forwardRef<IFormRef, FormProps>((props, ref) => {
   const { name, children, initialValues, onFinish, onFinishFailed } = props;
   const { form, fields, dispatch, ...rest } = useStore(initialValues);

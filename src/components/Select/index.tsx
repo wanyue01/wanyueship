@@ -29,6 +29,13 @@ export interface SelectContext {
 
 export const selectContext = createContext<SelectContext>({ selectedValue: [] });
 
+/**
+ * 支持自定义的下拉框组件
+ * 
+ * ```js
+ * import Menu from 'wanyueship';
+ * ```
+ */
 export const Select: FC<SelectProps> = (props) => {
   const { defaultValue, placeholder, disabled, onChange, onVisibleChange, children, multiple } = props;
   const [openMenu, setOpenMenu] = useState(false);

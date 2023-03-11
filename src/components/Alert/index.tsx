@@ -21,7 +21,7 @@ interface AlertProps {
  * ### 引用方法
  * 
  * ```js
- * import { Alert } from 'component-library';
+ * import { Alert } from 'wanyueship';
  * ```
 */
 const Alert: React.FC<AlertProps> = (props) => {

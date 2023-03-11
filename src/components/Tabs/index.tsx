@@ -22,7 +22,7 @@ export interface TabsProps {
  * ### 引用方法
  * 
  * ```js
- * import { Tabs } from 'component-library';
+ * import { Tabs } from 'wanyueship';
  * ```
  */
 const Tabs: React.FC<TabsProps> = (props) => {

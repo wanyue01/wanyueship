@@ -21,7 +21,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  * Input 输入框
  * ### 引用方法
  * ```js
- * import Input from 'component-library';
+ * import Input from 'wanyueship';
  * ```
  */
 const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {

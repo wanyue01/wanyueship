@@ -10,6 +10,13 @@ export interface IconProps extends FontAwesomeIconProps {
   theme?: ThemeProps;
 };
 
+/**
+ * 对FontAwesomeIcon的封装
+ * ### 引用方法
+ * ```js
+ * import { Icon } from 'wanyueship';
+ * ```
+ */
 const Icon: React.FC<IconProps> = (props) => {
   const { className, theme, ...restProps } = props;
   const classes = classNames(className, {

@@ -54,7 +54,7 @@ export interface UploadFile {
  * ### 引用方法
  * 
  * ~~~js
- * import { Upload } from 'component-library'
+ * import { Upload } from 'wanyueship'
  * ~~~
  */
 const Upload: FC<UploadProps> = (props) => {
