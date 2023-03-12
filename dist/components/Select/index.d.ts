@@ -20,9 +20,6 @@ export interface SelectContext {
     onSelect?: (value: string, isSelected: boolean) => void;
 }
 export declare const selectContext: React.Context<SelectContext>;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 /**
  * 支持自定义的下拉框组件
  *
@@ -30,12 +27,6 @@ export declare const selectContext: React.Context<SelectContext>;
  * import Menu from 'wanyueship';
  * ```
  */
-=======
->>>>>>> ea33a46164029b48d2d7924aae8c156908758696
-=======
->>>>>>> ea33a46164029b48d2d7924aae8c156908758696
-=======
->>>>>>> ea33a46164029b48d2d7924aae8c156908758696
 export declare const Select: FC<SelectProps>;
 export type SelectComponent = FC<SelectProps> & {
     Option: FC<OptionProps>;

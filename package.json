@@ -19,7 +19,8 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "type": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.umd.js",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -38,7 +39,7 @@
     "start": "react-scripts start",
     "clean": "rimraf ./dist",
     "lint": "eslint --ext js,ts,tsx src --max-warnings 5",
-    "build": "npm run clean && npm run build-ts && npm run build-css",
+    "build": "npm run clean && npm run build-es && npm run build-umd",
     "test": "react-scripts test",
     "test:nowatch": "cross-env CI=true react-scripts test",
     "eject": "react-scripts eject",
@@ -46,7 +47,9 @@
     "build-storybook": "build-storybook -s public",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node-sass ./src/styles/index.scss dist/index.css",
-    "prepublishOnly": "npm run lint && npm run test:nowatch && npm run build"
+    "prepublishOnly": "npm run lint && npm run test:nowatch && npm run build",
+    "build-es": "rollup --config rollup/rollup.esm.config.js",
+    "build-umd": "rollup --config rollup/rollup.umd.config.js"
   },
   "husky": {
     "hooks": {
@@ -82,6 +85,10 @@
     ]
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -99,6 +106,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "rimraf": "^4.4.0",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.23",
+    "rollup-plugin-sass": "^1.12.19",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
     "webpack": "^5.75.0"
