@@ -27,6 +27,22 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fas);
 ;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+/**
+ * 对FontAwesomeIcon的封装
+ * ### 引用方法
+ * ```js
+ * import { Icon } from 'wanyueship';
+ * ```
+ */
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
 var Icon = function (props) {
     var _a;
     var className = props.className, theme = props.theme, restProps = __rest(props, ["className", "theme"]);

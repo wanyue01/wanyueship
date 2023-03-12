@@ -8,7 +8,19 @@ import TabItem from './tabItem';
  * ### 引用方法
  *
  * ```js
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * import { Tabs } from 'wanyueship';
+=======
  * import { Tabs } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+ * import { Tabs } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+ * import { Tabs } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
  * ```
  */
 var Tabs = function (props) {

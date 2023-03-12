@@ -15,7 +15,19 @@ interface AlertProps {
  * ### 引用方法
  *
  * ```js
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * import { Alert } from 'wanyueship';
+=======
  * import { Alert } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+ * import { Alert } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+ * import { Alert } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
  * ```
 */
 declare const Alert: React.FC<AlertProps>;

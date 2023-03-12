@@ -21,7 +21,19 @@ export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
  * 支持 Input 组件的所有属性 支持键盘事件选择
  * ### 引用方法
  * ~~~js
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * import { AutoComplete } from 'wanyueship';
+=======
  * import { AutoComplete } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+ * import { AutoComplete } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+ * import { AutoComplete } from 'component-library';
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
  * ~~~
  */
 declare const AutoComplete: React.FC<AutoCompleteProps>;

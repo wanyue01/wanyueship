@@ -17,6 +17,22 @@ import classNames from "classnames";
 ;
 ;
 export var selectContext = createContext({ selectedValue: [] });
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+/**
+ * 支持自定义的下拉框组件
+ *
+ * ```js
+ * import Menu from 'wanyueship';
+ * ```
+ */
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
 export var Select = function (props) {
     var defaultValue = props.defaultValue, placeholder = props.placeholder, disabled = props.disabled, onChange = props.onChange, onVisibleChange = props.onVisibleChange, children = props.children, multiple = props.multiple;
     var _a = useState(false), openMenu = _a[0], setOpenMenu = _a[1];

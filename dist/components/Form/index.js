@@ -61,6 +61,22 @@ import useStore from './useStore';
 import { FormItem } from './formItem';
 ;
 export var FormContext = createContext({});
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+/**
+ * 页面中常用的Form表单，支持自定义
+ * ### 引用方法
+ * ```js
+ * import { Form } from 'wanyueship';
+ * ```
+ */
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
+=======
+>>>>>>> ea33a46164029b48d2d7924aae8c156908758696
 var Form = forwardRef(function (props, ref) {
     var name = props.name, children = props.children, initialValues = props.initialValues, onFinish = props.onFinish, onFinishFailed = props.onFinishFailed;
     var _a = useStore(initialValues), form = _a.form, fields = _a.fields, dispatch = _a.dispatch, rest = __rest(_a, ["form", "fields", "dispatch"]);
