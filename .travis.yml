@@ -15,5 +15,3 @@ script:
 #   local_dir: storybook-static
 #   on:
 #     branch: develop
-  
-  
