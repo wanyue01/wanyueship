@@ -33,7 +33,7 @@ export const selectContext = createContext<SelectContext>({ selectedValue: [] })
  * 支持自定义的下拉框组件
  * 
  * ```js
- * import Menu from 'wanyueship';
+ * import Select from 'wanyueship';
  * ```
  */
 export const Select: FC<SelectProps> = (props) => {
